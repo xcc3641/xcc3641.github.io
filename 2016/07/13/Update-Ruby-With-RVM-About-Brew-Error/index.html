@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Update Ruby With RVM About Brew Error · IM XIE</title><meta name="description" content="Update Ruby With RVM About Brew Error - 谢三弟"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="short icon" href="/favicon.ico"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://imxie.cc/atom.xml" title="IM XIE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/xcc3641" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/WebLab/" target="_self" class="nav-list-link">WEBLAB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Update Ruby With RVM About Brew Error</h1><div class="post-info">2016年7月13日</div><div class="post-content"><p>要运行 IOS 的应用程序，需要安装 <a href="http://code4app.com/article/cocoapods-install-usage" target="_blank" rel="external">CocoaPods</a> ，然后又需要 Ruby ，发现安装的时候说 Ruby 版本过低（我 MBP 自带的版本号是 2.0 ==&gt; 2.2.2），所以又得找个 RVM 用来升级 Ruby。</p>
+<a id="more"></a>
+<h1 id="安装-RVM"><a href="#安装-RVM" class="headerlink" title="安装 RVM"></a>安装 RVM</h1><blockquote>
+<p>$ curl -L get.rvm.io | bash -s stable</p>
+</blockquote>
+<p>等待之后</p>
+<blockquote>
+<p>  $ source ~/.bashrc<br>  $ source ~/.bash_profile</p>
+</blockquote>
+<p>测试是否正常</p>
+<blockquote>
+<p>   $ rvm -v</p>
+</blockquote>
+<h1 id="升级-Ruby"><a href="#升级-Ruby" class="headerlink" title="升级 Ruby"></a>升级 Ruby</h1><blockquote>
+<p>$ rvm install 2.2.4</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Found remote file https://rvm_io.global.ssl.fastly.net/binaries/osx/10.11/x86_64/ruby-2.2.2.tar.bz2</div><div class="line">Checking requirements for osx.</div><div class="line">ERROR: &apos;/usr/local/Cellar&apos; is not writable - it is required for Homebrew, try &apos;brew doctor&apos; to fix it!</div><div class="line">Requirements installation failed with status: 1.</div></pre></td></tr></table></figure>
+<p>遇到上述错误。</p>
+<p>解决方案：</p>
+<blockquote>
+<p>sudo chown -R $USER /usr/local</p>
+</blockquote>
+<p>再次运行</p>
+<blockquote>
+<p>rvm install 2.2.2</p>
+</blockquote>
+<p>等待升级完成。</p>
+<h1 id="安装-CocoaPods"><a href="#安装-CocoaPods" class="headerlink" title="安装 CocoaPods"></a>安装 CocoaPods</h1><p>因为GFW，所以我们可以用淘宝的 Ruby 镜像来访问 cocoapods 。按照下面的顺序在终端中敲入依次敲入命令：</p>
+<blockquote>
+<p>$ gem sources –remove <a href="https://rubygems.org/" target="_blank" rel="external">https://rubygems.org/</a><br>//等有反应之后再敲入以下命令<br>$ gem sources -a <a href="https://ruby.taobao.org/" target="_blank" rel="external">https://ruby.taobao.org/</a></p>
+</blockquote>
+<p>为了验证你的Ruby镜像是并且仅是taobao，可以用以下命令查看：</p>
+<blockquote>
+<p>▶ gem sources -l</p>
+</blockquote>
+<p>出现这个就可以了：</p>
+<blockquote>
+<p><strong><em> CURRENT SOURCES </em></strong><br><a href="https://ruby.taobao.org/" target="_blank" rel="external">https://ruby.taobao.org/</a></p>
+</blockquote>
+<p>最后进行安装：</p>
+<blockquote>
+<p>$ sudo gem install cocoapods</p>
+</blockquote></div></article></div></section><footer><div class="paginator"><a href="/2016/07/18/Review-the-Java-basic-equals-hashcode/" class="prev">上一篇</a><a href="/2016/07/12/Android-New-Day-Night-Swtich/" class="next">下一篇</a></div><div data-thread-key="2016/07/13/Update-Ruby-With-RVM-About-Brew-Error/" data-title="Update Ruby With RVM About Brew Error" data-url="http://imxie.cc/2016/07/13/Update-Ruby-With-RVM-About-Brew-Error/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"imxie"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://www.imxie.cc/js/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2014 - 2019 做一件值得的事.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-80145821-1",'auto');ga('send','pageview');</script></body></html>

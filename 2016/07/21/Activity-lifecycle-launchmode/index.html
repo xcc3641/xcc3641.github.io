@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Android 基础 -- 生命周期和启动模式实践总结 · IM XIE</title><meta name="description" content="Android 基础 -- 生命周期和启动模式实践总结 - 谢三弟"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="short icon" href="/favicon.ico"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://imxie.cc/atom.xml" title="IM XIE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/xcc3641" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/WebLab/" target="_self" class="nav-list-link">WEBLAB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Android 基础 -- 生命周期和启动模式实践总结</h1><div class="post-info">2016年7月21日</div><div class="post-content"><p>Activity / Fragment 的生命周期是每个 Android 开发者最最基础的知识点。所以特别有必要自己整理一番。总看别人博客和书上的死知识，还不如自己动手实践，然后输出要印象深刻，理解透彻。</p>
+<a id="more"></a>
+<ul>
+<li><a href="#Activity-生命周期">Activity 生命周期</a><ul>
+<li><a href="#正常情况下的生命周期分析">正常情况下的生命周期分析</a></li>
+<li><a href="#异常状态下的生命周期">异常状态下的生命周期</a></li>
+</ul>
+</li>
+<li><a href="#Fragment">Fragment</a><ul>
+<li><a href="#普通的-Fragment">普通的 Fragment</a></li>
+<li><a href="#ViewPager-中的-Fragment">ViewPager 中的 Fragment</a></li>
+</ul>
+</li>
+<li><a href="#启动模式">启动模式</a><ul>
+<li><a href="#Activity-的四种启动模式">Activity 的四种启动模式</a></li>
+<li><a href="#具体实践">具体实践</a></li>
+</ul>
+</li>
+<li><a href="#参考文档">参考文档</a></li>
+</ul>
+<h3 id="Activity-生命周期"><a href="#Activity-生命周期" class="headerlink" title="Activity 生命周期"></a>Activity 生命周期</h3><h4 id="正常情况下的生命周期分析"><a href="#正常情况下的生命周期分析" class="headerlink" title="正常情况下的生命周期分析"></a>正常情况下的生命周期分析</h4><p><img src="/images/activitylife.png" alt=""></p>
+<ol>
+<li><p>针对一个特定的 Activity ，第一次启动，回调如下：<code>onCreate</code> —-&gt; <code>onStart</code> —-&gt; <code>onResume</code></p>
+<blockquote>
+<p>Log 日志<br>D/KLog: (MainActivity.java:19) onCreate<br>D/KLog: (MainActivity.java:44) onStart<br>D/KLog: (MainActivity.java:62) onResume</p>
+</blockquote>
+</li>
+<li><p>切换回到桌面的时候，回调如下：<code>onPause</code> —-&gt; <code>onStop</code></p>
+<blockquote>
+<p>Log 日志<br>D/KLog: (MainActivity.java:50) onPause<br>D/KLog: (MainActivity.java:68) onStop</p>
+</blockquote>
+</li>
+<li><p>Back 键退出的话，最后会 <code>onDestroy</code></p>
+</li>
+<li><p>启动一个新的 Activity , 我们看看两个 Activity 的生命周期：</p>
+<blockquote>
+<p>Log 日志<br>D/KLog: (MainActivity.java:50) onPause<br>D/KLog: (OtherActivity.java:25) onCreate<br>D/KLog: (OtherActivity.java:31) onStart<br>D/KLog: (OtherActivity.java:49) onResume<br>D/KLog: (MainActivity.java:68) onStop<br>可以得到顺序是：<code>onPause(A)</code> —-&gt; <code>onCreate(B)</code> —-&gt; <code>onStart(B)</code> —-&gt;  <code>onResume(B)</code> —-&gt; <code>onStop(A)</code></p>
+</blockquote>
+</li>
+<li><p>这个时候我们 Back 回到第一个 Activity 时发生的回调：</p>
+<blockquote>
+<p>Log 日志<br>D/KLog: (OtherActivity.java:37) onPause<br>D/KLog: (MainActivity.java:56) onRestart<br>D/KLog: (MainActivity.java:44) onStart<br>D/KLog: (MainActivity.java:62) onResume<br>D/KLog: (OtherActivity.java:55) onStop<br>D/KLog: (OtherActivity.java:61) onDestroy<br>可以得到顺序是： <code>onPause(B)</code> —-&gt; <code>onRestart(A)</code> —-&gt; <code>onStart(A)</code> —-&gt; <code>onResume(A)</code> —-&gt; <code>onStop(B)</code> —-&gt; <code>onDestroy(B)</code></p>
+</blockquote>
+</li>
+<li><p>如果我在 B Activity 中的 <code>onCreate</code> 回调中直接 <code>finish()</code>：</p>
+<blockquote>
+<p>Log 日志<br>D/KLog: (MainActivity.java:50) onPause<br>D/KLog: (OtherActivity.java:25) onCreate<br>D/KLog: (MainActivity.java:62) onResume<br>D/KLog: (OtherActivity.java:62) onDestroy<br>我们发现 B Activity 只会执行 <code>onCreate</code> 和 <code>onDestroy</code>。</p>
+</blockquote>
+</li>
+<li><p>接下来我们启动一个特殊的 Activity （半透明或者对话框样式）到关闭它：</p>
+<blockquote>
+<p>Log 日志<br>D/MainActivity: onPause<br>D/DialogActivity: onCreate<br>D/DialogActivity: onStart<br>D/DialogActivity: onResume<br>D/DialogActivity: onPause<br>D/MainActivity: onResume<br>D/DialogActivity: onStop<br>D/DialogActivity: onDestroy</p>
+</blockquote>
+<p> 在正常使用应用的过程中，前台 Activity 有时会被其他导致 Activity 暂停的可视组件阻挡。 例如，当半透明 Activity 打开时（比如对话框样式中的 Activity ），上一个 Activity 会暂停。 只要 Activity 仍然部分可见但目前又未处于焦点之中，它会一直暂停。</p>
+</li>
+</ol>
+<p><img src="/images/Dialog_activity.gif" alt=""></p>
+<div class="tip"><br>问题：如果是启动一个普通的 Dialog ，Activity 的会执行 onPause 吗？<br></div>
+
+<p>答案是不会的，我们可以这样理解，普通的 dialog 是依附在本 Activity 的，相当于是一个整体，所以它本身的焦点也是属于 Activity 的。故不会调用 onPause 。</p>
+<h4 id="异常状态下的生命周期"><a href="#异常状态下的生命周期" class="headerlink" title="异常状态下的生命周期"></a>异常状态下的生命周期</h4><p><img src="/images/basic-lifecycle-savestate.png" alt=""></p>
+<p><code>onSaveInstanceState</code> 方法只会出现在 <code>Activity</code> 被异常终止的情况下，它的调用时机是在 <code>onStop</code> 之前，它和 <code>onPause</code> 方法没有既定的时序关系，可能在它之前，也可能在它之后。当 <code>Activity</code> 被重新创建的时候， <code>onRestoreInstanceState</code> 会被回调，它的调用时机是 <code>onStart</code> 之后。<br>系统只会在 <code>Activity</code> 即将被销毁并且有机会重新显示的情况下才会去调用 <code>onSaveInstanceState</code> 方法。<br>当 <code>Activity</code> 在异常情况下需要重新创建时，系统会默认为我们保存当前 <code>Activity</code> 的视图结构，并且在 <code>Activity</code> 重启后为我们恢复这些数据，比如文本框中用户输入的数据、<code>listview</code> 滚动的位置等，这些 <code>view</code> 相关的状态系统都会默认为我们恢复。具体针对某一个 <code>view</code> 系统能为我们恢复哪些数据可以查看 <code>view</code> 的源码中的 <code>onSaveInstanceState</code> 和 <code>onRestoreInstanceState</code> 方法。</p>
+<p>Demo 代码：<br><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onSaveInstanceState</span><span class="params">(Bundle outState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onSaveInstanceState(outState);</div><div class="line">    KLog.d(getClass().getSimpleName(),<span class="string">"onSaveInstanceState"</span>);</div><div class="line">    outState.putString(STATE, <span class="string">"test"</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onRestoreInstanceState</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onRestoreInstanceState(savedInstanceState);</div><div class="line">    KLog.d(getClass().getSimpleName(),<span class="string">"[onRestoreInstanceState]: "</span> + savedInstanceState.getString(STATE));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>为了方便我们旋转下屏幕来异常终止 Activity :</p>
+<blockquote>
+<p>Log 日志<br>D/MainActivity: onPause<br>D/MainActivity: onSaveInstanceState<br>D/MainActivity: onStop<br>D/MainActivity: onDestroy<br>D/MainActivity: onCreate<br>D/MainActivity: onStart<br>D/MainActivity: [onRestoreInstanceState]: test<br>D/MainActivity: onResume</p>
+</blockquote>
+<p>摘自 <a href="https://book.douban.com/subject/26599538/" target="_blank" rel="external">Android 开发者艺术探索</a> 一书：</p>
+<blockquote>
+<p>关于保存和恢复 View 的层次结构，系统工作流程是： Activity 异常终止, Activity 调用 onSaveInstanceState 去保存数据，然后  Activity 会委托 Windows 去保存数据，接着 Window 再委托它上面的顶层容器去保存数据。顶层容器是一个 ViewGroup ，一般来说它很可能是 DectorView ，最后顶层容器再去通知它的子元素保存数据。（这是一种委托思想，上层委托下层，父容器委托子元素去处理事情，如 View 的绘制过程，事件分发都是采用类似的思想）</p>
+</blockquote>
+<h3 id="Fragment"><a href="#Fragment" class="headerlink" title="Fragment"></a>Fragment</h3><h4 id="普通的-Fragment"><a href="#普通的-Fragment" class="headerlink" title="普通的 Fragment"></a>普通的 Fragment</h4><p><img src="/images/fragment_lifecycle.png" alt=""></p>
+<p><img src="/images/fragment_activity.png" alt=""></p>
+<p>从图可以看出，Fragment 生命周期大部分的状态与 Activity 相似，特殊的是</p>
+<ul>
+<li><code>onAttach()</code> —— 当 Fragment 被加入到 Activity 时调用(在这个方法中可以获得所在的 Activity ).</li>
+<li><code>onCreateView()</code> —— 当 Activity 要得到 Fragment 的 Layout 时，调用此方法，Fragment 在其中创建自己的 Layout (界面)。</li>
+<li><code>onActivityCreated()</code> —— 当 Activity 的 onCreated() 方法返回后调用此方法</li>
+<li><code>onDestroyView()</code> —— 当 Fragment 中的视图被移除的时候，调用这个方法。</li>
+<li><code>onDetach()</code> —— 当 Fragment 和 Activity 分离的时候，调用这个方法。</li>
+</ul>
+<h4 id="ViewPager-中的-Fragment"><a href="#ViewPager-中的-Fragment" class="headerlink" title="ViewPager 中的 Fragment"></a>ViewPager 中的 Fragment</h4><p>我们开发中经常会用到 ViewPager + Fragment 组合的形式来完成特定的需求。本身 Fragment 生命周期就比 Activity 要复杂很多，当它在 ViewPager 中又是怎么回调呢？</p>
+<p>我先给 ViewPager 加入三个 Fragment:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><div class="line">viewPager = (ViewPager) findViewById(R.id.viewpager);</div><div class="line">fragmentList.add(<span class="keyword">new</span> OneTextFragment());</div><div class="line">fragmentList.add(<span class="keyword">new</span> TwoTextFragment());</div><div class="line">fragmentList.add(<span class="keyword">new</span> ThreeTextFragment());</div><div class="line">viewPager.setAdapter(<span class="keyword">new</span> FtAdapter(getSupportFragmentManager(), fragmentList));</div></pre></td></tr></table></figure>
+<p>启动这个 Activity 的日志如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/ViewPagerHostActivity: onCreate</div><div class="line">D/ViewPagerHostActivity: onStart</div><div class="line">D/ViewPagerHostActivity: onResume</div><div class="line">D/OneTextFragment: onAttach</div><div class="line">D/OneTextFragment: onCreate</div><div class="line">D/TwoTextFragment: onAttach</div><div class="line">D/TwoTextFragment: onCreate</div><div class="line">D/TwoTextFragment: onActivityCreated</div><div class="line">D/OneTextFragment: onActivityCreated</div><div class="line">D/OneTextFragment: onStart</div><div class="line">D/OneTextFragment: onResume</div><div class="line">D/TwoTextFragment: onStart</div><div class="line">D/TwoTextFragment: onResume</div></pre></td></tr></table></figure>
+<p>我们发现启动后，有两个 Fragment(one,two) 被创建，为什么会创建两个？这个问题我们留着后面说。</p>
+<p>当 Activity 进入后台：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/ViewPagerHostActivity: onPause</div><div class="line">D/ViewPagerHostActivity: onSaveInstanceState</div><div class="line">D/TwoTextFragment: onStop</div><div class="line">D/OneTextFragment: onStop</div><div class="line">D/ViewPagerHostActivity: onStop</div></pre></td></tr></table></figure>
+<p>当 Activity 返回前台：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/ViewPagerHostActivity: onRestart</div><div class="line">D/TwoTextFragment: onStart</div><div class="line">D/OneTextFragment: onStart</div><div class="line">D/ViewPagerHostActivity: onStart</div><div class="line">D/ViewPagerHostActivity: onResume</div><div class="line">D/TwoTextFragment: onResume</div><div class="line">D/OneTextFragment: onResume</div></pre></td></tr></table></figure></p>
+<p>当 Activity 销毁：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/ViewPagerHostActivity: onPause</div><div class="line">D/TwoTextFragment: onStop</div><div class="line">D/OneTextFragment: onStop</div><div class="line">D/ViewPagerHostActivity: onStop</div><div class="line">D/TwoTextFragment: onDestroyView</div><div class="line">D/TwoTextFragment: onDestroy</div><div class="line">D/TwoTextFragment: onDetach</div><div class="line">D/OneTextFragment: onDestroyView</div><div class="line">D/OneTextFragment: onDestroy</div><div class="line">D/OneTextFragment: onDetach</div><div class="line">D/ViewPagerHostActivity: onDestroy</div></pre></td></tr></table></figure></p>
+<p>滑动一页：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/ThreeTextFragment: onAttach</div><div class="line">D/ThreeTextFragment: onCreate</div><div class="line">D/ThreeTextFragment: onActivityCreated</div><div class="line">D/ThreeTextFragment: onStart</div><div class="line">D/ThreeTextFragment: onResume</div></pre></td></tr></table></figure></p>
+<p>当前显示的页面是 TwoTextFragment 然后 ThreeTextFragment 也已经创建好了。</p>
+<p>再滑动一页：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/OneTextFragment: onStop</div><div class="line">D/OneTextFragment: onDestroyView</div></pre></td></tr></table></figure></p>
+<p>当前显示的页面是 ThreeTextFragment ，我们发现 OneTextFragment 已经销毁。</p>
+<p>我们可以得到默认状态下的 ViewPager 会缓存 1 个 Fragment，相当于有两个 Fragment 是创建状态。<br>当我们增加一行代码：<br><figure class="highlight java"><table><tr><td class="code"><pre><div class="line">viewPager.setOffscreenPageLimit(<span class="number">2</span>);</div></pre></td></tr></table></figure></p>
+<p>当 Activity 创建时的生命周期：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/ViewPagerHostActivity: onCreate</div><div class="line">D/ViewPagerHostActivity: onStart</div><div class="line">D/ViewPagerHostActivity: onResume</div><div class="line">D/OneTextFragment: onAttach</div><div class="line">D/OneTextFragment: onCreate</div><div class="line">D/TwoTextFragment: onAttach</div><div class="line">D/TwoTextFragment: onCreate</div><div class="line">D/ThreeTextFragment: onAttach</div><div class="line">D/ThreeTextFragment: onCreate</div><div class="line">D/TwoTextFragment: onActivityCreated</div><div class="line">D/OneTextFragment: onActivityCreated</div><div class="line">D/OneTextFragment: onStart</div><div class="line">D/OneTextFragment: onResume</div><div class="line">D/TwoTextFragment: onStart</div><div class="line">D/TwoTextFragment: onResume</div><div class="line">D/ThreeTextFragment: onStart</div><div class="line">D/ThreeTextFragment: onResume</div></pre></td></tr></table></figure></p>
+<p>三个 Fragment 都创建好了，并且左右切换不会走任何生命周期（虽然是废话）。</p>
+<p>setOffscreenPageLimit 源码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setOffscreenPageLimit</span><span class="params">(<span class="keyword">int</span> limit)</span> </span>&#123;</div><div class="line">	<span class="keyword">if</span> (limit &lt; DEFAULT_OFFSCREEN_PAGES) &#123;</div><div class="line">		Log.w(TAG, <span class="string">"Requested offscreen page limit "</span> + limit + <span class="string">" too small; defaulting to "</span> +</div><div class="line">				DEFAULT_OFFSCREEN_PAGES);</div><div class="line">		limit = DEFAULT_OFFSCREEN_PAGES;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> (limit != mOffscreenPageLimit) &#123;</div><div class="line">		mOffscreenPageLimit = limit;</div><div class="line">		populate();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>通过源码我们可以知道，ViewPager 的缓存的默认值和最小值是 <strong>1</strong>。</p>
+<h3 id="启动模式"><a href="#启动模式" class="headerlink" title="启动模式"></a>启动模式</h3><h4 id="Activity-的四种启动模式"><a href="#Activity-的四种启动模式" class="headerlink" title="Activity 的四种启动模式"></a>Activity 的四种启动模式</h4><ul>
+<li><p>Standard：标准模式，一调用 startActivity() 方法就会产生一个新的实例。</p>
+</li>
+<li><p>SingleTop: 来了 intent, 每次都创建新的实例，仅一个例外：当栈顶的activity 恰恰就是该activity的实例（即需要创建的实例)时，不再创建新实例。这解决了栈顶复用问题</p>
+</li>
+<li><p>SingleTask: 来了 intent 后，检查栈中是否存在该 activity的实例，如果存在就把 intent 发送给它，否则就创建一个新的该activity的实例，放入一个新的 task 栈的栈底。肯定位于一个 task 的栈底，而且栈中只能有它一个该 activity 实例，但允许其他 activity 加入该栈。解决了在一个 task 中共享一个 activity。</p>
+</li>
+<li><p>SingleInstance: 这个跟 SingleTask 基本上是一样，只有一个区别：在这个模式下的Activity实例所处的task中，只能有这个activity实例，不能有其他的实例。一旦该模式的activity的实例已经存在于某个栈中，任何应用在激活该activity时都会重用该栈中的实例，解决了多个task共享一个 activity。</p>
+</li>
+</ul>
+<p>这些启动模式可以在功能清单文件 AndroidManifest.xml 中进行设置，中的 launchMode 属性。</p>
+<h4 id="具体实践"><a href="#具体实践" class="headerlink" title="具体实践"></a>具体实践</h4><ul>
+<li><strong>SingleTop</strong> 栈顶复用模式</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">activity</span> <span class="attr">android:name</span>=<span class="string">".dLaunchChapter.OneActivity"</span></span></div><div class="line"><span class="tag">	<span class="attr">android:launchMode</span>=<span class="string">"singleTop"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p>我们在清单里先给 OneActivity 启动模式设置为 singleTop ，然后代码启动活动的顺序为 <code>One --&gt; One</code>，反复点击多次，然后我们看看栈内情况。</p>
+<p>adb 命令 ：<code>dumpsys activity | grep -i run</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">root@vbox86p:/ # dumpsys activity | grep -i run</div><div class="line">    Running activities (most recent first):</div><div class="line">        Run #1: ActivityRecord&#123;23e3b5b u0 com.hugo.demo.activitydemo/.dLaunchChapter.OneActivity t595&#125;</div><div class="line">        Run #0: ActivityRecord&#123;1a2c6f3 u0 com.hugo.demo.activitydemo/.LaunchActivity t595&#125;</div></pre></td></tr></table></figure></p>
+<p>该启动模式下并且 OneActivity 在栈顶所以不会创建新的实例，其生命周期调用 <code>onPause —-&gt; onNewIntent —-&gt; onResume</code></p>
+<ul>
+<li><strong>SingleTask</strong> 栈内复用模式</li>
+</ul>
+<p>修改 OneActivity 的启动模式为 SingleTask ，然后我们代码启动的顺序为 <code>One —-&gt; Two —-&gt; One</code>，接了下看看栈内情况：</p>
+<p><code>One —-&gt; Two</code> 我们记录下当前的 Activity 栈：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Running activities (most recent first):</div><div class="line">        Run #2: ActivityRecord&#123;1e8701b7 u0 com.hugo.demo.activitydemo/.dLaunchChapter.TwoActivity t632&#125;</div><div class="line">        Run #1: ActivityRecord&#123;39e11719 u0 com.hugo.demo.activitydemo/.dLaunchChapter.OneActivity t632&#125;</div></pre></td></tr></table></figure>
+<p>接下来我们执行 <code>Two —-&gt; One</code> ，当前 Activity 栈信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Running activities (most recent first):</div><div class="line">	   Run #1: ActivityRecord&#123;39e11719 u0 com.hugo.demo.activitydemo/.dLaunchChapter.OneActivity t632&#125;</div></pre></td></tr></table></figure>
+<p>当 TwoActivity 启动 OneActivity（SingleTask） 的时候，堆栈信息里只剩下了 OneActivity 并且和第一次内存信息 <strong>39e11719</strong> 相同，所以确实是复用了没有新建实例，接下来我们看看 Log 日志，再验证下我们的猜想，看看具体走了哪些生命周期：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">D/TwoActivity: onPause</div><div class="line">D/OneActivity: onNewIntent</div><div class="line">D/OneActivity: onRestart</div><div class="line">D/OneActivity: onStart</div><div class="line">D/OneActivity: onResume</div><div class="line">D/TwoActivity: onStop</div><div class="line">D/TwoActivity: onDestroy</div></pre></td></tr></table></figure>
+<p>果然此时 OneActivity 没有重新创建，并且系统把它切换到了栈顶并调用 onNewIntent 方法，同时我们发现， SingleTask 默认具有 clearTop 效果，导致 TwoActivity 出栈。</p>
+<div class="tip"><br>我们代码指定 OneActivity 的栈，效果还是一样的吗？<br></div>
+
+<p>带着问题我们修改下代码，增加一行：<br><figure class="highlight xml"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">activity</span></span></div><div class="line"><span class="tag">	<span class="attr">android:name</span>=<span class="string">".dLaunchChapter.OneActivity"</span></span></div><div class="line"><span class="tag">	<span class="attr">android:launchMode</span>=<span class="string">"singleTask"</span></span></div><div class="line"><span class="tag">	<span class="attr">android:taskAffinity</span>=<span class="string">"com.hugo.demo.singleTask"</span>/&gt;</span></div></pre></td></tr></table></figure></p>
+<p>然后我们按照刚刚顺序 <code>One —-&gt; Two —-&gt; One</code> 启动 Activity ，现在的栈内信息还会更上次一样吗？<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Running activities (most recent first):</div><div class="line">        Run #2: ActivityRecord&#123;1bc18519 u0 com.hugo.demo.activitydemo/.dLaunchChapter.OneActivity t636&#125;</div><div class="line">        Run #1: ActivityRecord&#123;36e5e368 u0 com.hugo.demo.activitydemo/.dLaunchChapter.TwoActivity t635&#125;</div></pre></td></tr></table></figure></p>
+<p>我们发现，虽然是复用了 OneActivity 而且移到了栈顶，但是并没有销毁 TwoActivity 。</p>
+<p>原因在于 singleTask 模式受 <a href="https://developer.android.com/guide/topics/manifest/activity-element.html?hl=zh-cn#aff" target="_blank" rel="external">taskAffinity</a> 影响，TwoActivity 和 OneActivity 所在的 Activity 栈不同。</p>
+<p>总结，启动一个 lauchMode 为 singleTask 的 Activity 时有两种情况:</p>
+<blockquote>
+<ol>
+<li>若系统中存在相同 taskAffinity 值的任务栈 (tacks1 )时,会把 task1 从后台调到前台，若实例存在则干掉其上面的所有 Activity 并调用 onNewInstance 方法重用，没有该实例则新建一个。</li>
+<li>否则，新建一个任务栈，并以此 Activity 作为 root 。</li>
+</ol>
+</blockquote>
+<ul>
+<li>SingleInstance 单实例模式</li>
+</ul>
+<p>这是一种加强的 singleTask 模式，它除了具有 singleTask 模式的所有特性以外，还加强了一点，就是具有此模式的 Activity 只能单独地位于任务栈。</p>
+<div class="tip"><br>好了，关于生命周期和启动模式实践+知识点整理已经完成啦，<br>非常推荐大家下载源码自己运行看看 Log 日志，查看源码：<a href="https://github.com/xcc3641/ActivityLifeDemo" target="_blank" rel="external">Github</a><br>，这样可以对这篇文章知识更加深刻。<br></div>
+
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ul>
+<li>Android 开发艺术探索 第一章</li>
+<li><a href="https://developer.android.com/training/basics/activity-lifecycle/index.html" target="_blank" rel="external">管理Activity生命周期</a></li>
+<li><a href="http://stackoverflow.com/questions/11549366/print-the-current-back-stack-in-the-log/11549400#11549400" target="_blank" rel="external">Print the current back stack in the log</a></li>
+</ul></div></article></div></section><footer><div class="paginator"><a href="/2016/07/23/let-s-talk-about-callback/" class="prev">上一篇</a><a href="/2016/07/18/Review-the-Java-basic-equals-hashcode/" class="next">下一篇</a></div><div data-thread-key="2016/07/21/Activity-lifecycle-launchmode/" data-title="Android 基础 -- 生命周期和启动模式实践总结" data-url="http://imxie.cc/2016/07/21/Activity-lifecycle-launchmode/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"imxie"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://www.imxie.cc/js/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2014 - 2019 做一件值得的事.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-80145821-1",'auto');ga('send','pageview');</script></body></html>

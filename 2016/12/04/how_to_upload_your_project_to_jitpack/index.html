@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> JitPack 指南 · IM XIE</title><meta name="description" content="JitPack 指南 - 谢三弟"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="short icon" href="/favicon.ico"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://imxie.cc/atom.xml" title="IM XIE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/xcc3641" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/WebLab/" target="_self" class="nav-list-link">WEBLAB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">JitPack 指南</h1><div class="post-info">2016年12月4日</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最初发布一些 lib 是用的 jCenter ，但是每次上传都跟玄学一样，就算我全局或者指定代理还是凭运气，后来问了老司机，结识了 <a href="https://jitpack.io/" target="_blank" rel="external">JitPack</a> ，体验更加方便和易懂。</p>
+<a id="more"></a>
+<blockquote>
+<ul>
+<li>文章来源：itsCoder 的 <a href="https://github.com/itsCoder/weeklyblog" target="_blank" rel="external">WeeklyBolg</a> 项目</li>
+<li>itsCoder主页：<a href="http://itscoder.com/" target="_blank" rel="external">http://itscoder.com/</a></li>
+<li>作者：<a href="https://github.com/xcc3641" target="_blank" rel="external">谢三弟</a></li>
+<li>审阅者：<a href="https://github.com/JoeSteven" target="_blank" rel="external">JoeSteven</a></li>
+</ul>
+</blockquote>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="账号"><a href="#账号" class="headerlink" title="账号"></a>账号</h4><ol>
+<li>首先进入网页我们看到是：</li>
+</ol>
+<p><img src="http://ww2.sinaimg.cn/large/006y8lVagw1faer45z2g0j31kw12542t.jpg" alt=""></p>
+<p>然后我们进行账号登陆，默认是跟 Github 绑定的。</p>
+<ol>
+<li>成功之后网站会读取你的 repo 显示在左侧：</li>
+</ol>
+<p><img src="http://ww4.sinaimg.cn/large/006y8lVagw1faer6xve2gj31kw10itbq.jpg" alt=""></p>
+<h4 id="Gradle-配置"><a href="#Gradle-配置" class="headerlink" title="Gradle 配置"></a>Gradle 配置</h4><ol>
+<li>首先在你的 root build.gradle 添加：</li>
+</ol>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><div class="line"><span class="keyword">buildscript</span> &#123;</div><div class="line">    <span class="keyword">repositories</span> &#123;</div><div class="line">        jcenter()</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">dependencies</span> &#123;</div><div class="line">        <span class="keyword">classpath</span> <span class="string">'com.android.tools.build:gradle:2.2.2'</span></div><div class="line">        <span class="keyword">classpath</span> <span class="string">'com.github.dcendents:android-maven-gradle-plugin:1.5'</span> <span class="comment">// 这一栏</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>接下来在你的 Lib build.gradle 添加：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">group = &apos;com.github.&lt;username&gt;&apos; // 最好是你的 github 名字</div><div class="line"></div><div class="line">// 指定编码</div><div class="line">tasks.withType(JavaCompile) &#123;</div><div class="line">    options.encoding = &quot;UTF-8&quot;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 打包源码</div><div class="line">task sourcesJar(type: Jar) &#123;</div><div class="line">    from android.sourceSets.main.java.srcDirs</div><div class="line">    classifier = &apos;sources&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">artifacts &#123;</div><div class="line">    archives sourcesJar</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>配置完成后，将你的项目 push 到 github</li>
+<li>点击 Releases 编写好之后发布，回到 JitPack</li>
+</ol>
+<h4 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h4><ol>
+<li>根据你的 group/Lib 搜索你的裤子。</li>
+</ol>
+<p><img src="http://ww3.sinaimg.cn/large/006y8lVagw1faerh75xvtj30yu0o8ta9.jpg" alt=""></p>
+<ol>
+<li>点击 <strong>get it</strong></li>
+</ol>
+<p><img src="http://ww2.sinaimg.cn/large/006y8lVagw1faerhpbkemj318u0v0gpe.jpg" alt=""></p>
+<p>别人就可以用到你写的裤子了 (๑•̀ㅂ•́) ✧</p>
+<ol>
+<li>更新裤子</li>
+</ol>
+<p>更新你的裤子，用上述同样的方法。</p>
+<p>不过在你完成发布新版的时候，最好删除原来的 Tag 。</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>全文以 <a href="https://github.com/xcc3641/Watcher" target="_blank" rel="external">Watcher: Help to watch the fps and used memory of your app</a> 为实践，如果有疑问可以参考该项目模仿配置。</p>
+<ul>
+<li><a href="https://jitpack.io" target="_blank" rel="external">JitPack</a></li>
+</ul></div></article></div></section><footer><div class="paginator"><a href="/2016/12/25/how_the_rxjava_thread_work/" class="prev">上一篇</a><a href="/2016/11/08/jike_Immersive_project/" class="next">下一篇</a></div><div data-thread-key="2016/12/04/how_to_upload_your_project_to_jitpack/" data-title="JitPack 指南" data-url="http://imxie.cc/2016/12/04/how_to_upload_your_project_to_jitpack/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"imxie"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://www.imxie.cc/js/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2014 - 2019 做一件值得的事.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-80145821-1",'auto');ga('send','pageview');</script></body></html>
