@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 从零到“就看天气”上线 · IM XIE</title><meta name="description" content="从零到“就看天气”上线 - 谢三弟"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="short icon" href="/favicon.ico"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://imxie.cc/atom.xml" title="IM XIE"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/xcc3641" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/WebLab/" target="_self" class="nav-list-link">WEBLAB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">从零到“就看天气”上线</h1><div class="post-info">2015年11月13日</div><div class="post-content"><p>想借自己这款“就看天气”说说自己接近半年来的Android开发之路，也算是自己这段时间的学习总结和知识沉淀。</p>
+<p>自己是重庆某高校大三学生，软件工程学院。在学校大一的时候学习的是C艹（当然这个特别难懂的语言着实打击了我一阵子，所以没有学好）</p>
+<p>大二在学校学了Java。在Java学习过程中，比大一时候要轻松很多，就我个人而言，认为学习Java比C艹要轻松，然而还是不明白学校为什么还是要把C艹的学习放在大一。</p>
+<p>决定学习Android是自己很早的想法了，但是真正落实去做是放在了大二暑假。</p>
+<a id="more"></a>
+<p>这之前自己做了如下准备：</p>
+<ul>
+<li>一台配置不错的台式（SSD+8G内存）</li>
+<li>Java基础知识</li>
+<li>极客学院Vip账号（非广告，当然你还有其他选择，比如慕课网的视频也不错）</li>
+<li>《第一行代码》</li>
+</ul>
+<p>一个好的电脑确实是必需品，现在写Android应该都开始用Android Studio了吧，这个IDE配上SDD+8G内存你才能优雅的写代码。</p>
+<p>Android学习之前真的要把Java基础学好，这样你学Android的时候才不会特别痛苦。掌握基础之后再学Android，还可以边学习Android边复习Java，一举两得。</p>
+<p>现在很多网上的视频教程，我个人最开始是跟着极客学院视频走的，而且还加上翻《第一行代码》这本书。虽然这本书是用的Eclipse，但是你用AS重写是完全没有问题的。</p>
+<h2 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h2><p>只有在实际操作中你才能知道自己哪些方面的知识欠缺，才会知道开发过程中会遇到哪些恶心的BUG，才会主动的去思考，搜索方案去解决这个问题。而且在自己实践中，也获得了很多开发应用的乐趣。而自己特别喜欢这种创造带给自己的快乐，也是这样才让我喜欢去敲代码吧。<br>每个天气类应用逻辑就是特别简单，但是这个小应用也能让你明白很多Android的知识。整理了下自己开发这款的思路：</p>
+<h3 id="获取省会列表"><a href="#获取省会列表" class="headerlink" title="获取省会列表"></a>获取省会列表</h3><p>自己获取省会城市列表是应用本地数据库，该数据库里包含了省——市——乡三级，Android里用SQLite进行数据库处理操作，最后用ListView显示出来。<br>这里会学到的知识就是：SQLite，Cursor，简单的ListView+Adapter。</p>
+<h3 id="获取天气信息"><a href="#获取天气信息" class="headerlink" title="获取天气信息"></a>获取天气信息</h3><p>这里获取天气信息是从获取到用户要查什么城市名称后跟地址组合发送给“和风天气”API，它会返回给我一个JSON数据。<br>这里会学到的知识是：Android的网络通信。这里我自己用的是android-async-http库。</p>
+<h3 id="处理天气信息"><a href="#处理天气信息" class="headerlink" title="处理天气信息"></a>处理天气信息</h3><p>获取到返回的JSON数据后，需要对这个JSON进行解析，这里我用的是Gson这个库，并且用SharedPreferences进行保存。<br>这里会学到的知识是：Json数据的处理，SharedPreference常用库的应用。</p>
+<h3 id="更新UI"><a href="#更新UI" class="headerlink" title="更新UI"></a>更新UI</h3><p>从SharedPreference获取指定数据，并实现UI更新。<br>这里会学到的知识是：对Android线程的理解。</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p>就看天气—个人向天气类应用<br>断断续续写了2个月<br>实战+资料+看书+整理 这样的自我学习模式很有效果<br>已经在<a href="http://www.wandoujia.com/apps/com.xiecc.seeWeather" target="_blank" rel="external">豌豆荚</a>，<a href="http://app.meizu.com/apps/public/detail?package_name=com.xiecc.seeWeather" target="_blank" rel="external">魅族应用</a>，<a href="http://www.coolapk.com/apk/com.xiecc.seeWeather" target="_blank" rel="external">酷安</a>等平台上线</p>
+<p>希望你们喜欢而且能够做出自己喜欢的应用（＾∀＾）</p>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><p><img src="http://xcc3641.qiniudn.com/app-bbbbf42a002b8046a1bf26ac25edca89_b.png" alt=""><br><img src="http://xcc3641.qiniudn.com/app-05bd34f69a1aaea3db73dc136a866a4d_b.png" alt=""><br><img src="http://xcc3641.qiniudn.com/app-a5303e929e5dc5d8e04e1aa68bdd8c7f_b.png" alt=""></p>
+<p><strong> 这货晚上，长这个样子的  (/“≡ _ ≡)/~┴┴</strong></p>
+<p><img src="http://xcc3641.qiniudn.com/app-39ad9f7922efa58b9bf0039d09d57ff4_b.png" alt=""></p></div></article></div></section><footer><div class="paginator"></div><div data-thread-key="hide/就看天气介绍.html" data-title="从零到“就看天气”上线" data-url="http://imxie.cc/hide/就看天气介绍.html" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"imxie"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://www.imxie.cc/js/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2014 - 2019 做一件值得的事.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-80145821-1",'auto');ga('send','pageview');</script></body></html>
