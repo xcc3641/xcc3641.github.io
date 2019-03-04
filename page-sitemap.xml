@@ -14,14 +14,14 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/Android-Studio-Mac-%E9%97%AA%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</loc>
+        <loc>http://imxie.cc/hide/Android-New-Day-Night-Swtich.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/Android-New-Day-Night-Swtich.html</loc>
+        <loc>http://imxie.cc/hide/Android-Studio-Mac-%E9%97%AA%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -42,13 +42,6 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/Gifts-for-designers.html</loc>
-        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>http://imxie.cc/hide/Android6.0-permissions-part-1.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -56,14 +49,21 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/My-Mac-Awesome-Apps.html</loc>
+        <loc>http://imxie.cc/hide/Review-Java-Thread-2.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/Review-Java-Thread-2.html</loc>
+        <loc>http://imxie.cc/hide/Gifts-for-designers.html</loc>
+        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://imxie.cc/hide/My-Mac-Awesome-Apps.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -84,7 +84,7 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/Update-Ruby-With-RVM-About-Brew-Error.html</loc>
+        <loc>http://imxie.cc/hide/SharedPreferences-Util.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -98,7 +98,7 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/SharedPreferences-Util.html</loc>
+        <loc>http://imxie.cc/hide/Update-Ruby-With-RVM-About-Brew-Error.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -106,6 +106,13 @@
     
     <url>
         <loc>http://imxie.cc/hide/how_to_upload_your_project_to_jitpack.html</loc>
+        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://imxie.cc/hide/python-%E5%88%9D%E6%8E%A2-leancloud.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -126,21 +133,7 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/python-%E5%88%9D%E6%8E%A2-leancloud.html</loc>
-        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>http://imxie.cc/hide/tao-lun-Rx-onError.html</loc>
-        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://imxie.cc/hide/%E3%80%90%E8%BD%AC%E3%80%91RxBus-%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -154,7 +147,7 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/hide/%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84App%E6%90%AD%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89API%E6%8E%A5%E5%8F%A3.html</loc>
+        <loc>http://imxie.cc/hide/%E3%80%90%E8%BD%AC%E3%80%91RxBus-%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -162,6 +155,13 @@
     
     <url>
         <loc>http://imxie.cc/hide/%E4%BB%8E%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0RecyclerView.html</loc>
+        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://imxie.cc/hide/%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84App%E6%90%AD%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89API%E6%8E%A5%E5%8F%A3.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -189,14 +189,14 @@
     </url>
     
     <url>
-        <loc>http://imxie.cc/wait/Review-Java-Thread-3.html</loc>
+        <loc>http://imxie.cc/wait/To-write-some-script-to-work-efficiently.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://imxie.cc/wait/To-write-some-script-to-work-efficiently.html</loc>
+        <loc>http://imxie.cc/wait/Review-Java-Thread-3.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -259,6 +259,13 @@
     </url>
     
     <url>
+        <loc>http://imxie.cc/hide/%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8Dhexo.html</loc>
+        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://imxie.cc/hide/%E3%80%90%E8%87%AA%E6%95%B4%E7%90%86%E3%80%91Android%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84Tips.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -267,13 +274,6 @@
     
     <url>
         <loc>http://imxie.cc/hide/%E5%B0%B1%E7%9C%8B%E5%A4%A9%E6%B0%94V2-0.html</loc>
-        <lastmod>2017-08-11T03:02:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://imxie.cc/hide/%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8Dhexo.html</loc>
         <lastmod>2017-08-11T03:02:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
