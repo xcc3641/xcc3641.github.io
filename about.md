@@ -2,6 +2,9 @@
 layout: page
 title: 被你发现了
 permalink: /about/
+navlevel: header
+navtitle: About
+position: 2
 ---
 
 > Hi，
