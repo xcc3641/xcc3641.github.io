@@ -40,7 +40,8 @@ date: 2019-01-06 17:50:14
 去讲述之后，是一种自我治愈，在过程中复盘关键节点中自己的想法，是一个反思的过程，也是抛出问题的方式。
 
 这周我看到的有意思的东西：
-- https://www.gcores.com/articles/105529
+
+- [日本动画中制服文化的终极学术图鉴](https://www.gcores.com/articles/105529)
 
 这周周末上海的阳光：
 
@@ -64,8 +65,8 @@ date: 2019-01-06 17:50:14
 
 本周阅读：
 
-- https://mp.weixin.qq.com/s/fUnIB0WciCmxogffiCjCpQ
-- http://zh.learnlayout.com/
+- [一种新的架构设计思路，用户行为驱动开发](https://mp.weixin.qq.com/s/fUnIB0WciCmxogffiCjCpQ)
+- [学习CSS布局](http://zh.learnlayout.com/)
 
 # 二月
 
@@ -108,6 +109,7 @@ date: 2019-01-06 17:50:14
 - 小爱同学，闭嘴
 
 「世界上有太多孤独的人害怕先踏出第一步。」—— 《绿皮书》
+
 下周见。
 
 # 三月
@@ -130,9 +132,9 @@ date: 2019-01-06 17:50:14
 
 本周阅读：
 
-- https://mp.weixin.qq.com/s/sA7ICpHYubCH6wMoJjjz7Q
-- https://zh.wikipedia.org/wiki/%E6%B2%89%E6%B2%A1%E6%88%90%E6%9C%AC
-- https://zh.wikipedia.org/wiki/%E6%9C%BA%E4%BC%9A%E6%88%90%E6%9C%AC
+- [5分钟了解《代码整洁之道》精华](https://mp.weixin.qq.com/s/sA7ICpHYubCH6wMoJjjz7Q)
+- [沉没成本](https://zh.wikipedia.org/wiki/%E6%B2%89%E6%B2%A1%E6%88%90%E6%9C%AC)
+- [机会成本](https://zh.wikipedia.org/wiki/%E6%9C%BA%E4%BC%9A%E6%88%90%E6%9C%AC)
 
 #### 2. 03/10
 
@@ -174,7 +176,7 @@ date: 2019-01-06 17:50:14
 
 > 本账号从现在起停止更新，现有内容会保存不动。原因：
 > 
-> https://twitter.com/Scholars_Stage/status/1099222129550086149
+> [T. Greer 推特](https://twitter.com/Scholars_Stage/status/1099222129550086149)
 > 
 > 这不是什么新发现，但是时候知行合一了。
 > 
