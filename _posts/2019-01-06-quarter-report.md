@@ -65,8 +65,8 @@ date: 2019-01-06 17:50:14
 
 本周阅读：
 
-- [一种新的架构设计思路，用户行为驱动开发](https://mp.weixin.qq.com/s/fUnIB0WciCmxogffiCjCpQ)
 - [学习CSS布局](http://zh.learnlayout.com/)
+- [一种新的架构设计思路，用户行为驱动开发](https://mp.weixin.qq.com/s/fUnIB0WciCmxogffiCjCpQ)
 
 # 二月
 
@@ -100,6 +100,8 @@ date: 2019-01-06 17:50:14
 
 「浪漫和可爱」是现在对人的最高评价。
 
+---
+
 19年是我把自己丢出去社交的一年。不会再惧怕陌生人的见面交流，当面说话比起单纯文字来说更多元，我会接受到对方的语气，语调，神态，还有周遭环境，画面感更让我能记忆清楚和更大的回味空间。自卑这点是真的逃不掉，虽然我跟朋友说过几次，但对方都是一脸不可思议，我也不好再重复，自身心理活动自己清楚就好，不需要去得到认可。
 
 有了小爱同学后，我比之前回家多了几句话：
@@ -120,7 +122,7 @@ date: 2019-01-06 17:50:14
 
 还有，这周两个女性同学跟我提起了「沉没成本」这个词，我晚上回家就打开电脑在维基百科查了下大概，之后放在扩展阅读里叭。对了，我还提醒了偶像在春天的时候，更新公众号。我喜欢偶像的文字，从大学认识她开始。随意贴两句话：
 
-- “割”，是我觉得听得最疼的词。我把疼痛放大传递给还未感知的人，这不能救命，只是怕大家毫无防备。
+- 「割」，是我觉得听得最疼的词。我把疼痛放大传递给还未感知的人，这不能救命，只是怕大家毫无防备。
 - 如果说上海的梧桐、银杏是穷人的黄金，那一定是没见过郊区大片大片丰收的稻田。
 
 抽了两根烟，一根是周五晚上，室友去看电影，我没有大门钥匙，在单元门门口等着无聊；另一根是周日从哥哥家回来，走在大学路，不文明得边走边抽，风挺大，烟烧得很快。
@@ -132,16 +134,16 @@ date: 2019-01-06 17:50:14
 
 本周阅读：
 
-- [5分钟了解《代码整洁之道》精华](https://mp.weixin.qq.com/s/sA7ICpHYubCH6wMoJjjz7Q)
 - [沉没成本](https://zh.wikipedia.org/wiki/%E6%B2%89%E6%B2%A1%E6%88%90%E6%9C%AC)
 - [机会成本](https://zh.wikipedia.org/wiki/%E6%9C%BA%E4%BC%9A%E6%88%90%E6%9C%AC)
+- [5分钟了解《代码整洁之道》精华](https://mp.weixin.qq.com/s/sA7ICpHYubCH6wMoJjjz7Q)
 
 #### 2. 03/10
 
 这周做了两件跟收藏有关的事情。
 
 1. 用幕布开始记录这一年我阅读记录（包括书籍，电影，动漫，电视剧）
-2. 使用 clipping.io 同步了 kindle 的书摘，虽然 Knotes 会更好用一点
+2. 使用 clipping.io 同步了 Kindle 的书摘，虽然 Knotes 会更好用一点
 
 把自己所看的影音书籍记录下来还是因为脑子不靠谱，容易忘事，但这些我花过的时间，我不想辜负，记录下来我看到名字总会想起一点东西，再不济，我还有个搜索的关键词。
 
@@ -159,20 +161,18 @@ date: 2019-01-06 17:50:14
 
 「爱情不是星星和月亮，只是狗屎运」 这句话是出自披着深夜福利外衣但讲述纯爱的《Sex Education》。一个观察，发现近几年涉及 LGBTQ 题材的片子增多，看看奥斯卡里面得奖中的擦边也不少，越来越大众化我觉得是好事情，但我最怕风向如此——拍个片子不管怎样都要扯上这类元素——会导致审美疲劳和没有必要。
 
-- - -
+---
 
 周六又去录制电台了，这次是讲被骗的经历，对我而言深刻的是小时候玩一个网游，卖号的时候被骗，虽然没有多少金额，但那个时候对我心灵打击是挺大的，对方很轻易的打碎你的信任，还在上面多踩了几脚，特别难受。但对我而已，并不能因为他一个人这样的举动，让我厌恶陌生人，还是相信大部分人还是善良可爱的，为了会多做的是一件事情是，会在不确定的情况下，为自己建立防御，免得被骗得太白痴——但这样其实也挺违心的。
 但防人之心不可无，此前提下，最大程度得保持对陌生人的好意。
 
 周日因为有跟人约晚饭，所以没有出远门，在公司跟一个学习小组复习五十音图。之前的我只背了一半也就是平假名，片假名内心抗拒就退缩了，现在还是得两个一起记，那天背好了4排，学习是没有错的。还答应了教他们拍照的原理，自己也会去备备课，讲讲三元素和简单构图吧，虽然我自己也不算什么大师，也在学习。
 
-- - -
-
 **本周阅读：**
 
 **关于一个帖子**
 
-一分世界最后在 telegram 频道里发的内容：
+一分世界最后在 Telegram 频道里发的内容：
 
 > 本账号从现在起停止更新，现有内容会保存不动。原因：
 > 
@@ -187,13 +187,13 @@ date: 2019-01-06 17:50:14
 
 > I am going to call the media ecosystem of 2003-2011~ the "old blogosphere," or OB, for short. There were certain things about the way that landscape functioned that mitigated almost all of the problems Scott discusses in moderating online communities now.
 > 
-> The first important difference is *scale.* 
+> The first important difference is *scale.*
 > 
 > Tumblr, twitter, reddit, and facebook are aggregators. There purpose is to collect everything you might want to see and put it in one place--not just the content itself, but comments on it. Even reddit, which is the most divvied up of the bunch, works on this same general principle. 
 > 
 > Contrast this with the OB. In the OB, you read something because you regularly visited the blog in question or because someone that you regularly read included the blog on their blogroll or included the post or thread in a link round-up. 
 >
-> …
+> […]
 
 扩展阅读：[RIP CULTURE WAR THREAD](https://slatestarcodex.com/2019/02/22/rip-culture-war-thread/)
 
