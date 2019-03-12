@@ -29,8 +29,7 @@ markdown: kramdown
 plugins:  
   - jekyll-feed
 
-navlevel: header
-navtitle: Awesome Title
+google_analytics: UA-80145821-1
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
