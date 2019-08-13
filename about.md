@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 被你发现了
+title: 
 permalink: /about/
 navlevel: header
 navtitle: About
@@ -8,7 +8,7 @@ position: 2
 ---
 
 > Hi，
-> 我在记录我珍惜的时间。
+> 我在这里，记录我珍惜的时间。
 
 ---
 
