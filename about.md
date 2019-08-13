@@ -4,7 +4,7 @@ title:
 permalink: /about/
 navlevel: header
 navtitle: About
-position: 2
+position: 3
 ---
 
 > Hi，
