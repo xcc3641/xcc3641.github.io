@@ -4,6 +4,9 @@ title: 几枝：一句诗词APP
 permalink: /project/jizhi
 ---
 
+![](/assets/images/jizhi.jpg)
+
+
 ## 前言
 
 这个 APP 的灵感来自于一个同名 Chrome Tab 插件，因为自己也是该插件的用户，十分喜欢作者的设计和想法，邮件征得同意后移植到了 Android 客户端。
