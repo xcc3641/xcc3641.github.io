@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: 几枝：一句诗词APP
 permalink: /project/jizhi
 ---
 
