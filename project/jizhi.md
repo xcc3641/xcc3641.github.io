@@ -21,8 +21,8 @@ permalink: /project/jizhi
 
 ## 市场
 
-- 酷安：[https://www.coolapk.com/apk/248825](https://www.coolapk.com/apk/248825)
-- Google Play：[https://play.google.com/store/apps/details?id=com.hugo.jizhi](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
+- [酷安 ⏬](https://www.coolapk.com/apk/248825)
+- [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
 
 ---
 
