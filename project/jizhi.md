@@ -4,7 +4,7 @@ title: 几枝：一句诗词APP
 permalink: /project/jizhi
 ---
 
-![](/assets/images/jizhi.jpg)
+![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi.jpg)
 
 
 ## 前言
@@ -60,7 +60,7 @@ permalink: /project/jizhi
 - 优化 首页波浪，更加自然
 - 新增 捐赠页面，大家看意愿给俺猫买点罐头哈
 
-![](/assets/images/image_cat.png)
+![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/image_cat.png)
 
 ---
 
