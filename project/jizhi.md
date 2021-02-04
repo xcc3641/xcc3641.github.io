@@ -19,10 +19,15 @@ permalink: /project/jizhi
 
 ---
 
-## 市场
+## 操作说明
 
-- [酷安 ⏬](https://www.coolapk.com/apk/248825)
-- [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
+操作说明：
+
+- 双击诗词、波浪都可以进入沉浸模式
+
+- 首页右滑可以滑出抽屉
+
+- 桌面小部件可以在设置页面中进行配置
 
 ---
 
@@ -100,3 +105,10 @@ permalink: /project/jizhi
     </ul>    
 
 </details>
+
+---
+
+## 市场
+
+- [酷安 ⏬](https://www.coolapk.com/apk/248825)
+- [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
