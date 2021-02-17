@@ -4,7 +4,7 @@ title: 几枝：一句诗词APP
 permalink: /project/jizhi
 ---
 
-![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi.jpg)
+![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi.png)
 
 
 ## 前言
@@ -27,21 +27,33 @@ permalink: /project/jizhi
 
 ---
 
+## 市场
+
+- [酷安 ⏬](https://www.coolapk.com/apk/248825)
+- [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
+- [App Store ⏬]() 待上架
+
+---
+
 ## TODO
 
 记录一些还未来得及做的想法。
 
-### ⏳ 1.5.6 （待做）
+### ⏳ 1.5.8 （待做）
 
 - 新增 查看全文页面
 - 新增 关于开发者页面
 - 新增 幻灯片模式。交互：通过 FAB  进入横屏模式+沉浸+屏幕常量+自动刷新。
 - 新增 APP 介绍页
 - 新增 用户自己换字体的功能
-- 优化 「刷新」=> 下一首、图标也可以优化
-- 修复 状态栏沉浸式
 
 ## 更新日志
+
+### ✅ 1.5.6/1.5.7
+
+- 优化 沉浸状态栏
+- 优化 首页刷新全屏交互
+- 修复 新用户打开异常
 
 ### ✅ 1.5.5
 
@@ -109,10 +121,3 @@ permalink: /project/jizhi
     </ul>    
 
 </details>
-
----
-
-## 市场
-
-- [酷安 ⏬](https://www.coolapk.com/apk/248825)
-- [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
