@@ -4,7 +4,7 @@ title: 几枝：一句诗词APP
 permalink: /project/jizhi
 ---
 
-![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi.png)
+![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi_banner.png)
 
 
 ## 前言
@@ -39,7 +39,7 @@ permalink: /project/jizhi
 
 记录一些还未来得及做的想法。
 
-### ⏳ 1.5.9 （待做）
+### ⏳ 1.5.9 （~~待做~~ => 画饼）
 
 - 新增 关于开发者页面
 - 新增 幻灯片模式。交互：通过 FAB  进入横屏模式+沉浸+屏幕常量+自动刷新。
