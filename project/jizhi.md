@@ -4,7 +4,7 @@ title: 几枝：一句诗词APP
 permalink: /project/jizhi
 ---
 
-![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi_banner.png)
+![](https://cdn.jsdelivr.net/gh/xcc3641/xcc3641.github.io@master/assets/images/jizhi.png)
 
 
 ## 前言
@@ -39,7 +39,8 @@ permalink: /project/jizhi
 - 新增 APP 介绍页
 - 新增 用户自己换字体的功能
 - 优化 诗词详情页（作者生平，诗词赏析...)
-  - [参考数据库](https://github.com/xcc3641/chinese-gushiwen) [参考技术文档](https://ktor.kotlincn.net/quickstart/guides/api.html)
+- 新增 中国色沉浸式浏览页面
+- 新增 适当的震动反馈
 
 ## 更新日志
 
