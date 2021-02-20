@@ -7,7 +7,7 @@ navtitle: About
 position: 3
 ---
 
-> Hi，
+> Hi
 
 ---
 
