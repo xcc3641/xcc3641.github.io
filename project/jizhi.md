@@ -27,7 +27,7 @@ permalink: /project/jizhi
 
 - [酷安 ⏬](https://www.coolapk.com/apk/248825)
 - [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
-- [App Store ⏬]() 待上架 => TF测试中
+- App Store 👉🏻 搜索「几枝」即可下载
 
 ---
 
