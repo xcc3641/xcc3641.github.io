@@ -27,7 +27,9 @@ permalink: /project/jizhi
 
 - [酷安 ⏬](https://www.coolapk.com/apk/248825)
 - [Google Play ⏬](https://play.google.com/store/apps/details?id=com.hugo.jizhi)
-- App Store 👉🏻 搜索「几枝」即可下载
+- [App Store ⏬](https://apps.apple.com/us/app/%E5%87%A0%E6%9E%9D/id1552874203)
+
+👉🏻 另外也可以直接搜索「几枝」进行下载
 
 ---
 
@@ -44,6 +46,10 @@ permalink: /project/jizhi
 - 优化 诗词详情页（作者生平，诗词赏析...)
 - 新增 中国色沉浸式浏览页面
 - 新增 适当的震动反馈
+- 修复 白屏问题
+- 优化 外露按钮
+- 优化 点击诗词即可跳转详情
+- 新增 Android 适配 target 30
 
 ## 更新日志
 
