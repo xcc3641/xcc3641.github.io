@@ -20,7 +20,6 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://imxie.itscoder.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
 github_username:  xcc3641
-instagram_username: imxie_95
 
 color_scheme: github
 # Build settings
