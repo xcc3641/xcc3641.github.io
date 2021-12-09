@@ -59,7 +59,7 @@ params:
 
 menu:
   header:
-    - name: Articles
+    - name: 日志
       url: "/articles/"
   # footer:
   #   - name: RSS
