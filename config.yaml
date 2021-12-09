@@ -17,8 +17,8 @@ params:
   # Default to true
   enableFootnotes: true
   
-  siteName: "IMXIE"
-  # siteDesc: "Hugo is Absurdly Fast!"
+  # siteName: "IMXIE"
+  # siteDesc: "IMXIE"
   author: "Hugo"
 
 

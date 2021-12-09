@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2019 季度记（一）
-date: 2019-01-06 17:50:14
+date: "2019-01-06"
 ---
 
 # 一月
@@ -28,7 +28,7 @@ date: 2019-01-06 17:50:14
 
 周日去参加了一个即友组织的一个扫街活动，其实是想把自己丢出去社交而已。从甜爱路一直走到北外滩，挺不错的路线，有潜入一个快到长春路(?）附近的弄堂，特别干净，外面都是挂着洗好的衣物，风吹着，带着干净的味道，当时在那里待了好久。一起扫街乱走的话，两双眼睛还是很容易发现很多值得拍的东西，但有一张特别喜欢，有阳光，有笑容，所以这一天值得了。
 
-![](/assets/images/weekly/0.jpg)
+![](https://raw.githubusercontent.com/xcc3641/AddictedPics/master/blog/202112091522733.jpg)
 
 #### 3. 01/20
 
@@ -45,7 +45,7 @@ date: 2019-01-06 17:50:14
 
 这周周末上海的阳光：
 
-![](/assets/images/weekly/1.jpg)
+![](https://raw.githubusercontent.com/xcc3641/AddictedPics/master/blog/202112091522648.jpg)
 
 
 #### 4. 01/27
