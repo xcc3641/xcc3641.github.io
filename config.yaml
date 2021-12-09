@@ -2,7 +2,7 @@ baseurl: "https://imxie.itscoder.com"
 languageCode: "zh-cn"
 title: ""
 theme: "hugo-tania"
-paginate: 6
+paginate: 100
 
 disqusShortname: 
 
@@ -25,6 +25,9 @@ params:
   # Limit how many categories filter show above search input.
   # Default to 5
   maxCategoryToShow: 10
+
+  mainSections:
+    - posts
 
   # Show your socail information with icon on index bio with `_index.md` content.
   socialOptions:
