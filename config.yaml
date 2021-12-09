@@ -44,6 +44,8 @@ params:
     twitter:
     twitch:
     whatsapp:
+    z-app-store: https://apps.apple.com/us/developer/%E6%99%A8%E6%88%90-%E8%B0%A2/id1552871946
+    z-google-play: https://play.google.com/store/apps/dev?id=6600056662611762016
   
   # Comments settings
   comments:
