@@ -1,6 +1,6 @@
 baseurl: "https://imxie.itscoder.com"
 languageCode: "zh-cn"
-title: ""
+title: "IMXIE"
 theme: "hugo-tania"
 paginate: 100
 
