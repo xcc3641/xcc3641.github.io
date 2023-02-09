@@ -61,8 +61,11 @@ params:
 
 menu:
   header:
+    - name: 应用
+      url: "/app"
     - name: 日志
       url: "/articles/"
+
   # footer:
   #   - name: RSS
   #     url: "/index.xml"
