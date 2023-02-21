@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 .jsconfig.json
 /public
+.vercel
