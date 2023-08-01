@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2022 年从混沌中站起</title><link>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2022/</link><pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2022/</guid><description>Twitter
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 年 7 月全职独立开发的这一个月</title><link>https://imxie.itscoder.com/posts/one-month-of-full-time-independent-development/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/one-month-of-full-time-independent-development/</guid><description>我像站在池塘边一直攥着石头的人，在一个月前我终于下定决心把这个石头扔了出去，看看自己能泛起什么涟漪。
+开发与推广 我想记录这个月是觉得这段新的尝试和经历的开始，对自己的人生来说可能是一个回忆节点。
+我本职是 Android 开发工程师，工作经验六年。在职期间兴趣使然，利用业余时间开发了几枝，小渐变和小作卡片，它们也是我在离开公司后，有勇气快速尝试全职独立开发这件事情。每个 App 对我来说就是一段故事，所以准备以它们为核心来进行叙述。
+几枝 - 小众古风诗词 6 月 25 日 - 7 月 20 日。
+几枝的 Android 版本是在 2019 年上线，社区里一直有 iOS 用户反馈需要，学习了 Flutter 后在 2021 年上架了 App Store，它是我工作后第一个独立开发的应用。哪怕这么多年，我对它的新功能开发其实也不够多，对它还存有许多需要实现的部分。在有了大把自由时间后，几枝成了我第一个动工和商业化尝试的项目。
+我当时设计的会员功能卖点是：
+诗词小组件样式的美化（排版和背景） 诗词的收藏数量 6 月 30 日几枝的会员上线，在上述有限已开发的权益上，我不久后就看到了用户的购买日志。这部分带给我的正反馈特别巨大，原来我只需要做着自己相信的事情，也是可以被看到和被支持的，同时支持中带着金钱，也验证了我所做的事情除了我以外，也有人认为有价值。
+得到善意回应后我也立马投入更多精力和想法快速完善它，达到我内心认为配得上用户对我的金钱支持：上线了诗词的朗诵和其他优化。
+同时这些日渐增多的正反馈，也给了我去推广的勇气，推广对我来说比开发要难很多，但是这份勇气让我去相信了自己可以去发声，可以站在更公共的场合去展示自己的作品。因为我想要让自己的作品得到更多人的关注和喜欢，这件事情哪怕自己害怕，也得害怕着去完成。
+发布朋友圈，即刻动态和同步 Telegram，这三者是最开始我发声的地方。朋友圈会比较克制，即刻动态和自己的 Telegram 频道同步动态心理负担会比较小。同时我也开了小红书的账号，尝试分享和推广，虽然效果甚微。
+以上其实都还算在我的舒适区内，只是在分享生活日常以外，多同步了自己的独立开发的进度。
+第一件让我有所突破的是主动向相关媒体投稿，我的投稿对象是 Newlearner@自留地。
+我用突破一次是因为我的害怕和羞耻，其逻辑在于：我向媒体投稿宣传自己目前有商业化的项目，就是寻求利益，我对自己做这种以钱为导向的直白利己营销行为，会感觉羞耻和抗拒。所以我需要去重塑自我对这块的认知，在心理建设准备了两三天后，我撰写好了推广文并进行了投稿。
+这条推广带给了我许多关注，也给几枝带来了相对不错的下载量和内购收入，同时观察了评论区并没有对我这种行为有任何负面的说法。看到整体结果后，内心开心的同时也消除了我之前的内耗，可以更自然和轻松地看待这样的事情。
+小作卡片 - 美好你关心的动态 7 月 13 日 - 7 月 31 日。
+小作卡片最初版本是在 2022 年 3 月完成，当时只成功上架了 Google Play，App Store上因为经验不足，我一直没处理好审核问题，所以就搁浅在 TestFlight 中进行分发使用。</description></item><item><title>2022 年从混沌中站起</title><link>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2022/</link><pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2022/</guid><description>Twitter
 不要拿着「真诚表达自己」作为挡箭牌，等着对方去理解和接纳你，属于自私也属于暴力。
 2022/01/19
 &amp;ndash;
