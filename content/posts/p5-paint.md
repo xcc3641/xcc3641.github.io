@@ -11,8 +11,6 @@ date: "2023-12-11"
 
 # 学习参考
 
-我的学习路径和参考：
-
 ## 官网
 
 ![](https://photo-recipe-1301515261.cos.ap-shanghai.myqcloud.com/img/202312112354745.png)
