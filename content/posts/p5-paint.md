@@ -68,8 +68,11 @@ date: "2023-12-11"
 ⛰
 
 > "To see a World in a Grain of Sand
+>
 > And a Heaven in a Wild Flower
+>
 > Hold Infinity in the palm of your hand
+>
 > And Eternity in an hour ..."
 >
 > BY WILLIAM BLAKE
@@ -99,9 +102,10 @@ date: "2023-12-11"
 
 🔗： [https://imxie.itscoder.com/blue/](https://imxie.itscoder.com/blue/)
 
+**⚠️ 注意：** 默认播放音乐，所以打开前注意音量。
+
 这个是上线的一个网站，打开查看体验会比较好，因为这里的方块粒子都是动态的。
 
-**⚠️ 注意：**这里默认播放了音乐，所以打开前注意音量。
 
 使用 p5.js 很方便就可以做到背景的这个动态效果。方块从底部往斜上方移动，在移动过程中伴随着大小和透明度的变化，像微光闪烁的星星。
 
@@ -120,6 +124,6 @@ date: "2023-12-11"
 归档物料：
 
 - p5.js 官网： [https://p5js.org/zh-Hans/get-started/](https://p5js.org/zh-Hans/get-started/)
-- 吳哲宇 教程：[https://course.creativecoding.in/notes](https://course.creativecoding.in/notes)
-- 星空网站：[https://imxie.itscoder.com/blue/](https://imxie.itscoder.com/blue/)
+- 吳哲宇教程：[https://course.creativecoding.in/notes](https://course.creativecoding.in/notes)
+- 动效 Demo 网站（默认会播放音乐）：[https://imxie.itscoder.com/blue/](https://imxie.itscoder.com/blue/)
 
