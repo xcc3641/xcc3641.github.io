@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>当代码遇上画布：探索 p5.js 的创意绘画</title><link>https://imxie.itscoder.com/posts/p5-paint/</link><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/p5-paint/</guid><description>前言 今天翻动态的时候，看到了在 2022 年春天的时候，我学习 p5.js 画的作品。p5.js 简单来说是专为想要使用代码在网络上去表达想法，创意的 JavaScript 的库。
 我很羡慕会画画的人，他们具有把脑海里的想象具象到现实的能力，偶然遇到 p5.js 准备尝试用我熟悉的方式，来进行绘画的创作。
-学习参考 我的学习路径和参考：
-官网 先通过 p5.js 的官网，熟悉它的基础语法，同时跟随官方的基础检查过完所有的 Demo。
+学习参考 官网 先通过 p5.js 的官网，熟悉它的基础语法，同时跟随官方的基础检查过完所有的 Demo。
 完成后我熟悉了：
 基础语法 运作流程 简单的应用 🔗：https://p5js.org/zh-Hans/get-started/
 进阶案例 后来我在探索好的教程和案例时，发现大家喜欢了一位喜欢的老师：吳哲宇。
