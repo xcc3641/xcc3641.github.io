@@ -119,10 +119,10 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 &lt;/h2>
 &lt;p>⛰&lt;/p>
 &lt;blockquote>
-&lt;p>&amp;ldquo;To see a World in a Grain of Sand
-And a Heaven in a Wild Flower
-Hold Infinity in the palm of your hand
-And Eternity in an hour &amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;To see a World in a Grain of Sand&lt;/p>
+&lt;p>And a Heaven in a Wild Flower&lt;/p>
+&lt;p>Hold Infinity in the palm of your hand&lt;/p>
+&lt;p>And Eternity in an hour &amp;hellip;&amp;rdquo;&lt;/p>
 &lt;p>BY WILLIAM BLAKE&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;img loading="lazy"
@@ -165,8 +165,8 @@ src="https://photo-recipe-1301515261.cos.ap-shanghai.myqcloud.com/img/2023121123
 alt=""
 />&lt;/p>
 &lt;p>🔗： &lt;a href="https://imxie.itscoder.com/blue/">https://imxie.itscoder.com/blue/&lt;/a>&lt;/p>
+&lt;p>&lt;strong>⚠️ 注意：&lt;/strong> 默认播放音乐，所以打开前注意音量。&lt;/p>
 &lt;p>这个是上线的一个网站，打开查看体验会比较好，因为这里的方块粒子都是动态的。&lt;/p>
-&lt;p>**⚠️ 注意：**这里默认播放了音乐，所以打开前注意音量。&lt;/p>
 &lt;p>使用 p5.js 很方便就可以做到背景的这个动态效果。方块从底部往斜上方移动，在移动过程中伴随着大小和透明度的变化，像微光闪烁的星星。&lt;/p>
 &lt;h1 id="总结">
 &lt;a href="#%e6%80%bb%e7%bb%93" class="anchor">
@@ -186,8 +186,8 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 &lt;p>归档物料：&lt;/p>
 &lt;ul>
 &lt;li>p5.js 官网： &lt;a href="https://p5js.org/zh-Hans/get-started/">https://p5js.org/zh-Hans/get-started/&lt;/a>&lt;/li>
-&lt;li>吳哲宇 教程：&lt;a href="https://course.creativecoding.in/notes">https://course.creativecoding.in/notes&lt;/a>&lt;/li>
-&lt;li>星空网站：&lt;a href="https://imxie.itscoder.com/blue/">https://imxie.itscoder.com/blue/&lt;/a>&lt;/li>
+&lt;li>吳哲宇教程：&lt;a href="https://course.creativecoding.in/notes">https://course.creativecoding.in/notes&lt;/a>&lt;/li>
+&lt;li>动效 Demo 网站（默认会播放音乐）：&lt;a href="https://imxie.itscoder.com/blue/">https://imxie.itscoder.com/blue/&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>2023 年 7 月全职独立开发的这一个月</title><link>https://imxie.itscoder.com/posts/one-month-of-full-time-independent-development/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/one-month-of-full-time-independent-development/</guid><description>
 &lt;p>👋&lt;/p>
 &lt;p>嗨，我是广志，是一名有六年 Android 开发经验的工程师。在职期间，我利用业余时间开发了几枝，小渐变和小作卡片。这些项目给了我离开公司后，快速尝试全职独立开发的勇气和经验。每个 App 在我心中都记录着一段故事，所以我准备以它们为核心来记录和分享我的经历。&lt;/p>
