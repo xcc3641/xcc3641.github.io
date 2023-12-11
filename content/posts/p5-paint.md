@@ -3,15 +3,15 @@ title: "当代码遇上画布：探索 p5.js 的创意绘画"
 date: "2023-12-11"
 ---
 
-# 前言
+## 前言
 
 今天翻动态的时候，看到了在 2022 年春天的时候，我学习 p5.js 画的作品。p5.js 简单来说是专为想要使用代码在网络上去表达想法，创意的 JavaScript 的库。
 
 我很羡慕会画画的人，他们具有把脑海里的想象具象到现实的能力，偶然遇到 p5.js 准备尝试用我熟悉的方式，来进行绘画的创作。
 
-# 学习参考
+## 学习参考
 
-## 官网
+### 官网
 
 ![](https://photo-recipe-1301515261.cos.ap-shanghai.myqcloud.com/img/202312112354745.png)
 
@@ -25,7 +25,7 @@ date: "2023-12-11"
 
 🔗：[https://p5js.org/zh-Hans/get-started/](https://p5js.org/zh-Hans/get-started/)
 
-## 进阶案例
+### 进阶案例
 
 后来我在探索好的教程和案例时，发现大家喜欢了一位喜欢的老师：吳哲宇。
 
@@ -35,9 +35,9 @@ date: "2023-12-11"
 
 ![](https://photo-recipe-1301515261.cos.ap-shanghai.myqcloud.com/img/202312112355429.png)
 
-# 实战创作
+## 实战创作
 
-## 创作1：SUMMER TREE
+### 创作1：SUMMER TREE
 
 学习完成后，我开始了自己的创作过程。我首先尝试的是一些简单的随机点分布方式，后续慢慢进阶成模仿现实油画棒的方式，画一些简单的我喜欢的画。
 
@@ -61,7 +61,7 @@ date: "2023-12-11"
 
 ![](https://photo-recipe-1301515261.cos.ap-shanghai.myqcloud.com/img/202312112355784.png)
 
-## 创作2：MOUNTAIN
+### 创作2：MOUNTAIN
 
 ⛰
 
@@ -81,7 +81,7 @@ date: "2023-12-11"
 
 该图的创作在 SUMMER TREE 的基础上顺利很多，大概花了2个小时，完成这个这幅关于山的画。灵感来自：威廉·布萊克的《天真的预兆》。
 
-# 创作3：SAKURA
+### 创作3：SAKURA
 
 ![](https://photo-recipe-1301515261.cos.ap-shanghai.myqcloud.com/img/202312112356881.JPG)
 
@@ -116,12 +116,4 @@ date: "2023-12-11"
 以后有机会，再使用它写点好玩的东西。
 
 🙇‍♂️
-
----
-
-归档物料：
-
-- p5.js 官网： [https://p5js.org/zh-Hans/get-started/](https://p5js.org/zh-Hans/get-started/)
-- 吳哲宇教程：[https://course.creativecoding.in/notes](https://course.creativecoding.in/notes)
-- 动效 Demo 网站（默认会播放音乐）：[https://imxie.itscoder.com/blue/](https://imxie.itscoder.com/blue/)
 
