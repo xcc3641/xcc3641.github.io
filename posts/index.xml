@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>当代码遇上画布：探索 p5.js 的创意绘画</title><link>https://imxie.itscoder.com/posts/p5-paint/</link><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/p5-paint/</guid><description>前言 今天翻动态的时候，看到了在 2022 年春天的时候，我学习 p5.js 画的作品。p5.js 简单来说是专为想要使用代码在网络上去表达想法，创意的 JavaScript 的库。
 我一直羡慕那些能将脑海中的想象变为现实的画家。偶然间发现了 p5.js，我决定用自己熟悉的编程方式来尝试绘画创作。
-学习参考 官网 先通过 p5.js 的官网，熟悉它的基础语法，同时跟随官方的基础检查过完所有的 Demo。
+学习参考 官网 先通过 p5.js 的官网，熟悉它的基础语法，同时跟随官方的基础过完所有的 Demo。
 完成后我熟悉了：
 基础语法 运作流程 简单的应用 🔗：https://p5js.org/zh-Hans/get-started/
-进阶案例 后来我在探索好的教程和案例时，发现大家喜欢了一位喜欢的老师：吳哲宇。
+进阶案例 后来我在探索好的教程和案例时，发现了一位喜欢的老师：吳哲宇。
 他创建了一个关于互动艺术入门的网站，我特别喜欢他生动有趣的讲述方式和案例。
 🔗：https://course.creativecoding.in/notes 实战创作 创作1：SUMMER TREE 学习完成后，我开始了自己的创作过程。我首先尝试的是一些简单的随机点分布方式，后续慢慢进阶成模仿现实油画棒的方式，画一些简单的我喜欢的画。
 图1 是我很喜欢的一个过程图，我把一个画板，分成了16 个小的正方图。在每个小方块图中，做单独的训练。
