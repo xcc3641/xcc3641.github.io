@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>当代码遇上画布：探索 p5.js 的创意绘画</title><link>https://imxie.itscoder.com/posts/p5-paint/</link><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/p5-paint/</guid><description>前言 今天翻动态的时候，看到了在 2022 年春天的时候，我学习 p5.js 画的作品。p5.js 简单来说是专为想要使用代码在网络上去表达想法，创意的 JavaScript 的库。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 年不在想象中担忧</title><link>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2023/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2023/</guid><description>2022 能明显感知到行动力的骤减，我知道自己是把这个归因在了上半年发生的事情，对我来说是一个很合适作为借口去逃避和偷懒，持续半年多是该总结后拍拍灰往前走了。
+2023/01/10
+&amp;ndash;
+有种时刻是喝酒后回家路上发现忘记带钥匙，直接打车到朋友楼下。
+2023/01/11
+&amp;ndash;
+稍微学会了把在心里浮出“想要”的时刻变成了往前跨的那一步。
+2023/01/17
+&amp;ndash;
+突然想到一件事情，去年 10 月，朋友问我最近在读什么书。 我说：我在读《非暴力沟通》。 朋友说：这本我读过，读完后最大的收获是发现周围人都在暴力沟通我。
+2023/02/12
+&amp;ndash;
+“坚持的诀窍是让自己过一会儿再放弃”。
+2023/02/13
+&amp;ndash;
+清澈简单共享快乐的时刻，实属可贵。
+2023/02/19
+&amp;ndash;
+跳舞你只要战胜了羞耻心 你就赢了60%了。
+2023/02/22
+&amp;ndash;
+很久没有听人讲，要把不好的担心的事情用呸呸呸的方式处理掉了，突然想起来觉得老旧又好玩。
+2023/03/11
+&amp;ndash;
+朋友问我喜欢什么样的女生。 我已经可以很大方地说我喜欢漂亮的，笑起来好看的。
+2023/04/21
+&amp;ndash;
+很多基于他人意愿才能被满足的需求，都是将自己的幸福和自由交给他人处置。
+2023/04/24
+&amp;ndash;
+今天去看宝乐丝，演员唱着歌看着我走下台，一步一步靠近，直到在我腿上坐下，紧张害羞最先涌出来，她让我埋胸后离开，手慢慢从我脸颊划过。 回想这一幕的时候，我瞬间想到《苦月亮》里酒吧那一段，那一句：why so serious。 ​​​
+2023/05/12
+&amp;ndash;
+现在我很乐于去探索这些带来不同体验的事物，并测试它们哪些能够成为日常生活系统的一部分。
+2023/05/29
+&amp;ndash;
+球真的很奇妙，有个墙就可以得到对应你给予力的反馈。
+2023/06/10
+&amp;ndash;
+午饭间同事跟我聊了下他最近的 Crush。
+我看到真挚的喜欢，对人的善意和温柔被随意对待，会十分难过。
+我一直希望“可爱”的人，会遇到那个知道如何像你珍惜自己一样珍惜你的人。
+2023/06/12
+&amp;ndash;
+“和三弟在一起出去玩，容易发生意想不到好玩的事情。” ​​​
+喜欢旅途中的偶遇，比如听船回忆起冲绳时，三四微醺妹子激动捏他的脸，比如清迈跳舞认识的人，晚上带着去 bar，在河边和当地人喝酒聊天，比如杭州村口大树下碰到的可爱小狗和小朋友，西湖夜游碰到的高三毕业生拉着音响就在高歌。
+2023/06/14
+&amp;ndash;
+When you don’t create things, you become defined by your tastes rather than ability.</description></item><item><title>当代码遇上画布：探索 p5.js 的创意绘画</title><link>https://imxie.itscoder.com/posts/p5-paint/</link><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/p5-paint/</guid><description>前言 今天翻动态的时候，看到了在 2022 年春天的时候，我学习 p5.js 画的作品。p5.js 简单来说是专为想要使用代码在网络上去表达想法，创意的 JavaScript 的库。
 我一直羡慕那些能将脑海中的想象变为现实的画家。偶然间发现了 p5.js，我决定用自己熟悉的编程方式来尝试绘画创作。
 学习参考 官网 先通过 p5.js 的官网，熟悉它的基础语法，同时跟随官方的基础过完所有的 Demo。
 完成后我熟悉了：
