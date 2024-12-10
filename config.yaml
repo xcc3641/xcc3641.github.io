@@ -52,13 +52,6 @@ params:
     enabled: false
     provider: giscus
 
-    giscus:
-      repo: WingLim/hugo-tania
-      id: MDEwOlJlcG9zaXRvcnkzMTYyNjQzMDc=
-      category:
-        name: Comments
-        id: DIC_kwDOEtnPc84B_WKP
-
 menu:
   header:
     - name: 我的作品
