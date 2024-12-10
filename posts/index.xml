@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 年不在想象中担忧</title><link>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2023/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2023/</guid><description>2022 能明显感知到行动力的骤减，我知道自己是把这个归因在了上半年发生的事情，对我来说是一个很合适作为借口去逃避和偷懒，持续半年多是该总结后拍拍灰往前走了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>七日日和 002：银杏如落雪</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-002%E9%93%B6%E6%9D%8F%E5%A6%82%E8%90%BD%E9%9B%AA/</link><pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-002%E9%93%B6%E6%9D%8F%E5%A6%82%E8%90%BD%E9%9B%AA/</guid><description>👋
+朋友，一周一见。
+最近我在创作什么 小作卡片 主要的工作是给小作卡片的网页卡片添加了 AI 总结功能。详情我在这篇更新日志里有介绍，如果感兴趣的可以点击查看。
+很早大概半年前，就有用户向我提出这个功能的想法，推迟到现在才把这个功能交付，真的行动力不够。
+我好像一直存在这样的迟钝，我把这个归结于自身的产品力不足。思维依旧还是很传统的工程师思维。
+我又深刻明白**好的产品不是一次性做完美，而是在持续迭代中不断改进，**但思想转变确实需要时间，今年着实给我上了一大课。不过又一年对小作卡片的迭代，它变得我越来越喜欢，依旧保持简洁的统一风格，同时也有了很多大家喜欢的功能。 AI 总结功能是我第一个把 AI 添加到应用的功能，以后我应该会做更多这类的尝试。
+几枝 Android 版本的小组件终于与 iOS 同步样式上线了。 朗诵支持了多种音色，赞美 AI 时代。 新的想法在路上💡 上周看了一篇文章：Google SEO关键词新词挖掘并不神秘，提供了一种找趋势和方向的思路，我依葫芦画瓢研究了一下，发现了一个我感兴趣想要做的方向，准备近一个月快速实践和落地这个产品。
+同时也把之前关注的画原型的产品体验了一番 frame0，很推荐，是我喜欢的手绘风格，同时组件支持丰富。
+关于生活 这周是见朋友们的一周，大家都有一些变故，自己也不例外，说不心慌是骗人的。不过这种时候，我内心又多了另外一个声音告诉我，保持秩序，保持秩序，保持秩序。生活就是无常的，用自身的秩序和习惯才可以建立起外壳保护自己。
+感知到自己无措慌乱的一刻，我写下了这句话告诉自己：不用着急，也不要慌了阵脚，各自有各自的节奏，人生没有慢半拍，每一拍都是合拍。
+说说开心的。现在是东京的银杏季节，去了一趟上野公园，偶遇到这条被银杏铺满的小道，偶有风吹拂，银杏像下雪一样缓慢飘落，在有凉意的下午非常治愈。
+同时还在这里遇到了学生的游学，应该是东京以外的学生组织来玩，非常青春活力，可能我见识太少，日本学生合照的姿势真的很有感染力，除了美照以外，他们追求的可能是照片的生命力这样吗？
+下周见 我是一个喜欢美好事物的开发者，践行着王小波这句：别怕美好的一切消失，咱们先来让它存在。
+📱 我目前做了一些 App：
+几枝 - 愿君多采撷（国风小众诗词应用） 小作卡片 - 美化你关心的内容 （将你的文字/社交媒体内容转化成漂亮的卡片） 小渐变 - 制作自己的渐变壁纸 小记分 - 趣味记分神器（简单有趣的线下游戏计分助手） 懒海FM - 可以看见的白噪音 （缓解压力，释放身心，提升专注） 它们都可以在 App Store 和 Google Play 上搜索下载。</description></item><item><title>七日日和 001：开端</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-001%E5%BC%80%E7%AB%AF/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-001%E5%BC%80%E7%AB%AF/</guid><description>我想培养自己的周期性输出的习惯，所以开启这个&amp;quot;七日日和&amp;quot;的系列。
+七日：暗示一周的时光。 日和：取自日语，表示好天气。 时间需要被记录，自身也能够从这些碎片中了解到，我花费的时间在哪里，什么是我关心的，同时我也可能从主动表达和记录的主线中，摸索到我忽略掉的暗线。
+开启这个系列还有一个点是我发现自己 2024 年在表达上骤减，明明有想要提升自己的表达能力，但因为其他事情耽搁或者内心觉得抗拒，结果行动上成了矮子。所以为了减少执行的困难，我想以周记的概念，记录和分享一周的日常会是比较轻松的事情。
+大致上，我会从：
+最近我在创作什么 最近生活日常里我想要记录的 最近的随便看看 三个方向来书写每篇周记，定期在周一晚上去回顾上周的生活。
+最近我在创作什么 与 AI 工具合作 上周在跟 AI IDE 相关的工具相处浓度很高，日常编码从 Cursor 到 Windsurf，想法实践从 v0 到 bolt 都实践使用了一番。就一周的经验，我自己对以上工具的工作流程目前是：
+我如果有个想法想要快速实现玩玩效果时，我会先用 v0/bolt 以技术栈为（vite + react）实现 UI 和交互。 如果需要优化，我再下载项目到本地，用 Windsurf 打开，让 Windsurf 辅助我进行修改。 我是客户端工程师，对于 Web 开发技术不太熟练，通过以上工作流，我完成了我需要的App 官网更新：
+小作卡片的官网设计和开发
+https://kosaku.imxie.club
+我对 App 官网的要求就是简洁直观，我只需要主要的名字，简介和市场图，最主要的是展示全可下载的渠道。我把这些要求直接发给了 bolt，就给了我不错的框架概念。然后下载打包到本地，我再使用 Windsurf 打开，告诉它请指导我可配置的信息的位置，我把自己 App 的信息修改填入。同时，我得 App 做了多语言，所以可能会有海外宣发的需求，也让 Windsurf 帮助我进行了国际化适配，非常准确一次完成。
+整体调试和部署耗时 3 小时，对比之前自己去 GitHub 上找开源模板，然后修改发布快很多（主要是我前端技术很差）。
+复用经验快速部署其他应用官网
+通过这个经验，我就可以更快速的部署自己其他 App 的官网。让 Windsurf 把配置信息都整理输出到另外的文件，我复制重命名整个项目，修改成对应应用信息后，就可以直接部署发布。
+比如这是几枝的官网：
+https://jizhi.imxie.club</description></item><item><title>2023 年不在想象中担忧</title><link>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2023/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/sns/the-words-of-sns-during-2023/</guid><description>2022 能明显感知到行动力的骤减，我知道自己是把这个归因在了上半年发生的事情，对我来说是一个很合适作为借口去逃避和偷懒，持续半年多是该总结后拍拍灰往前走了。
 2023/01/10
 &amp;ndash;
 有种时刻是喝酒后回家路上发现忘记带钥匙，直接打车到朋友楼下。
