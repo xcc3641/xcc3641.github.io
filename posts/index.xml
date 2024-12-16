@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>七日日和 002：银杏如落雪</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-002%E9%93%B6%E6%9D%8F%E5%A6%82%E8%90%BD%E9%9B%AA/</link><pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-002%E9%93%B6%E6%9D%8F%E5%A6%82%E8%90%BD%E9%9B%AA/</guid><description>👋
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>七日日和 003：树影婆娑间</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-003%E6%A0%91%E5%BD%B1%E5%A9%86%E5%A8%91%E9%97%B4/</link><pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-003%E6%A0%91%E5%BD%B1%E5%A9%86%E5%A8%91%E9%97%B4/</guid><description>👋
+朋友，一周一见。
+最近我在创作什么 One API (AI 接口管理 &amp;amp;amp; 分发系统) 因为小作卡片开始支持了 AI 总结，同时我也有其他 Demo 项目在使用 AI 的接口，所以对此的管理需求开始出现。在网上搜到了 One API 这个开源项目，使用 Docker 很方便部署到了我的服务器。
+这样就可以方便汇总各个渠道的 API KEY，同样我以后其他项目想要接入 AI 功能时，我很好地监管用量。
+小作卡片 字体模块新增功能和优化
+花了点时间，优化了小作卡片的字体模块。 新增了可以导入更多的字体，同时修改了字体模块的交互。
+短链服务
+小作卡片的二维码数据是直接使用的社交媒体/网页链接，尽管我们已经做了一层清理，去除了平台分享跟踪 ID 等信息，但还是很长。 比如微信公众号：
+https://mp.weixin.qq.com/s/Ppiks2GRwSBGlEesUbjHcA 这样生成的二维码复杂度会上升，不好看之外也会影响扫描的成功率。 所以想着部署一个这样的服务，来优化这个问题（还未发版）。
+以后链接会变成类似：
+https://l.imxie.club/xxxx Prompt 最近在忙的项目中是 Prompt 驱动，之前 Prompt 都是功能性同时也是 AI 擅长的事情（总结），所以写起来难度不高。但这次既需要 AI 有一定的发散性，又要规范输出，我目前在这点上遇到了困难。 看了很多别人写的 Prompt，复制粘贴去测试发现效果挺好，但轮到自己的需求时，要把它转化成 Prompt 去驯服 AI 产生我需要的内容这才知道是需要功夫的。
+不过好在这次我刚需，更有直接的动力去研究和探索这件事情。不过好在这件事情可以不是阻碍项目推进的元素，因为可以做成配置化，随时可以动态调整它。
+关于生活 最近天气都非常好，阳光充足，珍惜好时光的念头一起，约了朋友出门逛公园。 这次是去的水元公园，因为那里有很多水杉，想要去看看。
+和朋友聊到过我的周记，我调侃道：我感觉自己每周的关于生活里都在写公园，积攒起来会不会变成每周公园推荐了 🤣。
+但自己本身就是一个爱逛公园的绿老头，所以发展成这样情理之中！
+我相机里最多的就是各种树 🌳
+有时候远远看它们，微风吹拂，树叶飘动，会觉得毛绒可爱。 走近看会被植被的茂密，褶皱的树皮所震撼，特别是站在树下，抬头透过树叶的间隙看湛蓝的天空时。
+(想大口大口呼吸的时刻呀&amp;hellip;)
+我们走到公园步行道的一半，准备找个椅子晒会太阳休息时，看到了一只超级可爱的狗狗，像个模特一样非常专业，安静地被主人拍摄。
+还去看了一场进击的巨人的舞台剧，最佩服的是现场的调度真的非常复杂，但是他们搞定了。舞台剧差不多是第一二季的内容，我最喜欢的是城市居民唱歌那段，那位演员的声音非常好听而且高音很舒服。</description></item><item><title>七日日和 002：银杏如落雪</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-002%E9%93%B6%E6%9D%8F%E5%A6%82%E8%90%BD%E9%9B%AA/</link><pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-002%E9%93%B6%E6%9D%8F%E5%A6%82%E8%90%BD%E9%9B%AA/</guid><description>👋
 朋友，一周一见。
 最近我在创作什么 小作卡片 主要的工作是给小作卡片的网页卡片添加了 AI 总结功能。详情我在这篇更新日志里有介绍，如果感兴趣的可以点击查看。
 很早大概半年前，就有用户向我提出这个功能的想法，推迟到现在才把这个功能交付，真的行动力不够。
