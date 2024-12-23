@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>七日日和 003：树影婆娑间</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-003%E6%A0%91%E5%BD%B1%E5%A9%86%E5%A8%91%E9%97%B4/</link><pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-003%E6%A0%91%E5%BD%B1%E5%A9%86%E5%A8%91%E9%97%B4/</guid><description>👋
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on IMXIE</title><link>https://imxie.itscoder.com/posts/</link><description>Recent content in Posts on IMXIE</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 23 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxie.itscoder.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>七日日和 004：冬日创思录</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-004%E5%86%AC%E6%97%A5%E5%88%9B%E6%80%9D%E5%BD%95/</link><pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-004%E5%86%AC%E6%97%A5%E5%88%9B%E6%80%9D%E5%BD%95/</guid><description>2024 年 12 月 23 日
+👋
+朋友，一周一见。
+最近我在创作什么 时间都花在了新项目上面，我在尝试与 AI 协同开发一款代号为 K 的小应用（先卖个关子）。我的 AI 伙伴因为 Windsurf 体验过期了，所以我选择切到了 Cursor，我之前有赞扬过 Windsurf 的自我反思和文件检索，目前 Cursor 的版本更新后，功能开始趋同，没有巨大的差异性很快会被赶上或者超过。据说最近新出的 Devin 相较前辈们有很大的不同，不过我还没有时间体验。
+“工欲善其事，必先利其器”。古人诚我不欺，上周给自己搭建好的 ONE-API 聚合多个 AI 平台，在我开发过程中方便了不少。主要节省的时间在于，我在自己的应用中可以根据功能更方便快捷地测试不同模型返回的效果，同时也更安全的管理自己的 API KEY，防止遗漏造成亏损。未来的应用 AI 大部分会是标配，所以在以后的开发中，也能发挥它的功效。
+K 这个小应用，我也试着在英推中进行公开构建，分享每日的功能进度和截图，我给自己定的开发时间是 7 天，目前基本完成，在做上架市场的准备。在英推公开构建中，有遇到反馈推荐我去 Reddit，这个平台我有账号，但是一直不太会玩，准备在 K 发布后，去那里找到合适的板块，写一篇关于 K 的开发历程。
+我也是透过 K 这个重 AI 的项目开始去转变想法。💡
+现在不能只停留在做一个需求时，去研究功能背后涉及到的技术要点，而是可以尝试交给 LLM 来解决问题，去驯服它。
+原本一个巨大的问题，按照之前经验会把它拆分成最小可执行的小问题来逐一解决，但是现在变成了向 LLM 输入，然后等待它的输出。
+同时这次我也坚定了这句：“不会设计就不要设计”。用系统组件，标准的交互去把自己的想法，以最快的方式构建出来，然后交给市场去验证。
+那如何用系统组件做出点不一样的视觉效果？ 我这次在执行上也借助了 AI，我们从颜色下手，可以挑选一个合适我们应用心智的主色，然后交给 AI 让它搭配一套应用主题色。
+K 这个应用还是从自己的身上找到的需求，每个 App 当做自己的一个故事一段经历，对外来说只有两个标准，成功或者失败，但于自己不是这样二元对立，比如上述的经验对我个体就是宝贵的。
+那以自己为方法，看看结果吧。
+关于生活 为了健康，还是没有一周都在家里，为了给自己找事情，安排了一次周五的分享会。 分享的主题是：“有意义的一天”。
+我 27,8 岁后就很少去思考“有意义”这个概念，觉得是徒增烦恼的事情，所以抱着好奇他人如何叙说去参加了这次分享。</description></item><item><title>七日日和 003：树影婆娑间</title><link>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-003%E6%A0%91%E5%BD%B1%E5%A9%86%E5%A8%91%E9%97%B4/</link><pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate><guid>https://imxie.itscoder.com/posts/weekly/%E4%B8%83%E6%97%A5%E6%97%A5%E5%92%8C-003%E6%A0%91%E5%BD%B1%E5%A9%86%E5%A8%91%E9%97%B4/</guid><description>👋
 朋友，一周一见。
 最近我在创作什么 One API (AI 接口管理 &amp;amp;amp; 分发系统) 因为小作卡片开始支持了 AI 总结，同时我也有其他 Demo 项目在使用 AI 的接口，所以对此的管理需求开始出现。在网上搜到了 One API 这个开源项目，使用 Docker 很方便部署到了我的服务器。
 这样就可以方便汇总各个渠道的 API KEY，同样我以后其他项目想要接入 AI 功能时，我很好地监管用量。
